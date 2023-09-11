@@ -76,7 +76,7 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  box-shadow: 2px 4px 10px 0px rgba(255,255,255, 0.5);
+  box-shadow: 1px 3px 8px 0px rgba(178, 217, 236, 0.6);
 }
 
 .sign-up:hover {
@@ -84,6 +84,6 @@
 }
 
 .hero img {
-  /* width: 50%; */
+  width: 50%; 
   /* height: 50%; */
 }
