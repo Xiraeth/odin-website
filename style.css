@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
-  --dark-bg: #1f2937;
+  font-family: 'Roboto', sans-serif;
+  --dark-bg: #1F2937;
   --hero-main-text-color: #f9faf8;
   --hero-main-size: 48px;
   --hero-secondary-text-color: #e5e7eb;
@@ -12,5 +15,75 @@
   --quote-text-size: 36px;
   --quote-text-color: var(var(--information-header-color));
   --button: #3882f6;
+  --buton-hover: #5998fe;
+  --margin-sides: 200px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.header {
+  height: 50px;
+  padding: 1em var(--margin-sides);
+  margin: 0;
+  background: var(--dark-bg);
+  color: var(--hero-secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  list-style: none;
+  display: flex;
+}
+
+.header-link a{
+  color: var(--hero-secondary-text-color);
+  font-size: var(--hero-secondary-size);
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+.hero {
+  height: 700px;
+  padding: 5rem var(--margin-sides);
+  background-color: var(--dark-bg);
+  display: flex;
+  flex: 1;
+}
+
+.hero-text{
+  margin-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: var(--hero-main-size)
+}
+
+.hero-text h1,
+.hero-text p {
+  margin-bottom: 10px;
+}
+
+.sign-up{
+  background-color: var(--button);
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px 0px rgba(255,255,255, 0.5);
+}
+
+.sign-up:hover {
+  background-color: var(--buton-hover);
+}
+
+.hero img {
+  /* width: 50%; */
+  /* height: 50%; */
+}
