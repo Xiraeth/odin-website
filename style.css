@@ -215,3 +215,15 @@
   background-color: var(--dark-bg);
   color: var(--volunter-bg)
 }
+
+.footer {
+  height: 10vh;
+  background-color: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p{
+  font-weight: lighter;
+}
