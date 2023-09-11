@@ -80,7 +80,7 @@
   margin-bottom: 10px;
 }
 
-.sign-up{
+.learn-more{
   background-color: var(--button-hero);
   padding: 5px 30px;
   border-radius: 10px;
@@ -89,7 +89,7 @@
   box-shadow: 1px 3px 8px 0px rgba(178, 217, 236, 0.6);
 }
 
-.sign-up:hover {
+.learn-more:hover {
   background-color: var(--buton-hero-hover);
 }
 
