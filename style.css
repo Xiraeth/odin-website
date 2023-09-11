@@ -8,20 +8,16 @@
   --hero-secondary-text-color: #e5e7eb;
   --hero-secondary-text-color-hover: #929bae;
   --hero-secondary-size: 18px;
-  --header-logo-text-color: var(var(--hero-main-text-color));
+  --header-logo-text-color: var(var(--hero-secondary-text-color));
   --header-logo-text: 24px;
   --information-header-size: 36px;
   --information-header-color: #1f2937;
-  --quote-bg-color: var(var(--hero-secondary-text-color));
+  --quote-bg-color: var(--hero-secondary-text-color);
   --quote-text-size: 36px;
-  --quote-text-color: var(var(--information-header-color));
+  --quote-text-color: var(--dark-bg);
   --button: #3882f6;
   --buton-hover: #5998fe;
   --margin-sides: 200px;
-}
-
-body{
-  /* min-height: 200vh; */
 }
 
 * {
@@ -96,11 +92,6 @@ body{
   background-color: var(--buton-hover);
 }
 
-.hero img {
-  /* width: 50%;  */
-  /* height: 50%; */
-}
-
 .information {
   margin-top: 2rem;
   padding: 0 var(--margin-sides);
@@ -115,6 +106,7 @@ body{
   color: var(--information-header-color);
   font-weight: 800;
   margin-bottom: 2em;
+  font-size: 36px;
 }
 
 .biomes {
@@ -139,10 +131,41 @@ body{
   border-radius: 20px;
   margin-bottom: 10px;
   border: 5px solid rgb(205, 205, 205);
+  cursor: pointer;
+  transition: scale 0.15s;
+}
+
+.biome-image:hover{
+  scale: 1.1;
 }
 
 .biome-container p {
   color: var(--information-header-color);
   width: 100%;
   text-align: center;
+}
+
+.quote-section {
+  margin-top: 100px;
+  height: 50vh;
+  padding: 0 var(--margin-sides);
+  background-color: var(--quote-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  color: var(--quote-text-color);
+  font-size: var(--quote-text-size);
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.citation{
+  font-weight: bold;
+  color: var(--quote-text-color);
+  align-self: flex-end;
+  padding-right: 100px;
 }
