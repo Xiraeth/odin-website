@@ -171,11 +171,35 @@
   padding-right: 100px;
 }
 
+.to-top{
+  width: 50px;
+  height: 50px;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 30px;
+  margin: 0 50px 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0, 0.3);
+}
+
+.to-top:hover{
+  background-color: rgb(23, 120, 218);  
+}
+
+.to-top p{
+  font-size: 2em;
+}
+
 .volunteer{
   height: 20vh;
   width: calc(100% - 2*var(--margin-sides));
   padding: 3rem 5rem;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   background-color: var(--volunter-bg);
   border-radius: 10px;
   display: flex;
