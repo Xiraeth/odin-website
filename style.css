@@ -15,8 +15,9 @@
   --quote-bg-color: var(--hero-secondary-text-color);
   --quote-text-size: 36px;
   --quote-text-color: var(--dark-bg);
-  --button: #3882f6;
-  --buton-hover: #5998fe;
+  --volunter-bg: mediumspringgreen;
+  --button-hero: #3882f6;
+  --buton-hero-hover: #5998fe;
   --margin-sides: 200px;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .sign-up{
-  background-color: var(--button);
+  background-color: var(--button-hero);
   padding: 5px 30px;
   border-radius: 10px;
   border: none;
@@ -89,11 +90,11 @@
 }
 
 .sign-up:hover {
-  background-color: var(--buton-hover);
+  background-color: var(--buton-hero-hover);
 }
 
 .information {
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding: 0 var(--margin-sides);
   min-height: 50vh;
   display: flex;
@@ -168,4 +169,49 @@
   color: var(--quote-text-color);
   align-self: flex-end;
   padding-right: 100px;
+}
+
+.volunteer{
+  height: 20vh;
+  width: calc(100% - 2*var(--margin-sides));
+  padding: 3rem 5rem;
+  margin: 100px auto;
+  background-color: var(--volunter-bg);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volunteer .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-text,
+.bottom-text {
+  color: var(--dark-bg);
+}
+
+.top-text{
+  font-weight: bold;
+}
+
+.bottom-text{
+  font-weight: lighter;
+}
+
+.volunteer-btn{
+  color: var(--dark-bg);
+  background-color: var(--volunter-bg);
+  padding: 5px 20px;
+  border: 2px solid var(--dark-bg);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.volunteer-btn:hover{
+  background-color: var(--dark-bg);
+  color: var(--volunter-bg)
 }
