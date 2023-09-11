@@ -6,6 +6,7 @@
   --hero-main-text-color: #f9faf8;
   --hero-main-size: 48px;
   --hero-secondary-text-color: #e5e7eb;
+  --hero-secondary-text-color-hover: #929bae;
   --hero-secondary-size: 18px;
   --header-logo-text-color: var(var(--hero-main-text-color));
   --header-logo-text: 24px;
@@ -19,6 +20,10 @@
   --margin-sides: 200px;
 }
 
+body{
+  /* min-height: 200vh; */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,15 +31,19 @@
   color: #fff;
 }
 
+.header-logo{
+  width: 100px;
+}
+
 .header {
-  height: 50px;
+  height: 10vh;
   padding: 1em var(--margin-sides);
   margin: 0;
   background: var(--dark-bg);
   color: var(--hero-secondary-text-color);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header-links {
@@ -49,8 +58,12 @@
   text-decoration: none;
 }
 
+.header-link a:hover{
+  color: var(--hero-secondary-text-color-hover);
+}
+
 .hero {
-  height: 700px;
+  height: 90vh;
   padding: 5rem var(--margin-sides);
   background-color: var(--dark-bg);
   display: flex;
@@ -84,6 +97,52 @@
 }
 
 .hero img {
-  width: 50%; 
+  /* width: 50%;  */
   /* height: 50%; */
+}
+
+.information {
+  margin-top: 2rem;
+  padding: 0 var(--margin-sides);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information h2{
+  color: var(--information-header-color);
+  font-weight: 800;
+  margin-bottom: 2em;
+}
+
+.biomes {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.biome-container{
+  width: 200px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.biome-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 5px solid rgb(205, 205, 205);
+}
+
+.biome-container p {
+  color: var(--information-header-color);
+  width: 100%;
+  text-align: center;
 }
