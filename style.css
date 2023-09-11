@@ -1,0 +1,16 @@
+:root {
+  --dark-bg: #1f2937;
+  --hero-main-text-color: #f9faf8;
+  --hero-main-size: 48px;
+  --hero-secondary-text-color: #e5e7eb;
+  --hero-secondary-size: 18px;
+  --header-logo-text-color: var(var(--hero-main-text-color));
+  --header-logo-text: 24px;
+  --information-header-size: 36px;
+  --information-header-color: #1f2937;
+  --quote-bg-color: var(var(--hero-secondary-text-color));
+  --quote-text-size: 36px;
+  --quote-text-color: var(var(--information-header-color));
+  --button: #3882f6;
+}
+
